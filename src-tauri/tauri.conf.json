@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "tauri-app-001",
+        "title": "updater",
         "width": 800,
         "height": 600
       }

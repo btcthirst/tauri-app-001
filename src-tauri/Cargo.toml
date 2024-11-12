@@ -15,11 +15,14 @@ name = "tauri_app_001_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2", features = [] }
+tauri-build = { version = "2.0.3", features = [] }
 
 [dependencies]
-tauri = { version = "2", features = [] }
-tauri-plugin-shell = "2"
-serde = { version = "1", features = ["derive"] }
-serde_json = "1"
+tauri = { version = "2.1.1", features = [] }
+tauri-plugin-shell = "2.0.2"
+tauri-plugin-dialog = "2"
+calamine = "0.26.1"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.132"
+lazy_static = "1.5.0"
 

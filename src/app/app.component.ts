@@ -11,14 +11,27 @@ import { invoke } from "@tauri-apps/api/core";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  greetingMessage = "";
+  helpMessage = "";
 
-  greet(event: SubmitEvent, name: string): void {
+  help(event: MouseEvent, name: string): void {
     event.preventDefault();
 
     // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    invoke<string>("greet", { name }).then((text) => {
-      this.greetingMessage = text;
+    invoke<string>("help", { name }).then((text) => {
+      this.helpMessage = text;
     });
+  }
+
+  click1() {
+    
+    invoke("click1").then()
+  }
+
+  click2() {
+    invoke("click2").then()
+  }
+
+  click3() {
+    invoke("click3").then()
   }
 }

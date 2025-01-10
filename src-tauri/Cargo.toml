@@ -15,14 +15,16 @@ name = "tauri_app_001_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0.3", features = [] }
+tauri-build = { version = "2.0.4", features = [] }
 
 [dependencies]
-tauri = { version = "2.1.1", features = [] }
-tauri-plugin-shell = "2.0.2"
-tauri-plugin-dialog = "2"
+tauri = { version = "2.2.0", features = [] }
+tauri-plugin-shell = "2.2.0"
+tauri-plugin-dialog = "2.2.0"
+tauri-plugin-notification = { version = "2.0.0", features = ["windows7-compat"] }
 calamine = "0.26.1"
-serde = { version = "1.0.215", features = ["derive"] }
-serde_json = "1.0.132"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.135"
 lazy_static = "1.5.0"
-
+rust_xlsxwriter = "0.80.0"
+chrono = "0.4.38"
